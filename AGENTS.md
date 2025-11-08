@@ -1,42 +1,19 @@
-# Custom Agent Specifications
+<!-- SPEC:START -->
+# Spec Instructions
 
-This file defines custom agent specifications for the project.
+These instructions are for AI assistants working in this project.
 
-## Updating Specifications
+Always open `@/specs/AGENTS.md` when the request falls under any of the following cases:
 
-When updating specifications, always check **[specs/AGENTS.md](specs/AGENTS.md)**.
-It contains guidelines on how to write specifications and detailed documentation.
+- When **adding a new feature or capability**  
+- When **explicitly asked to write a spec**  
+- When **asked to write a spec based on implementation details or existing code**
 
----
+Use `@/specs/AGENTS.md` to learn:
+- How to create and apply change proposals
+- Spec format and conventions
+- Project structure and guidelines
 
-## Agent List
+Keep this managed block so 'openspec update' can refresh the instructions.
 
-### [Agent Name]
-
-**Role**: [Brief description of agent's role]
-
-**Scope**:
-- [Responsibility 1]
-- [Responsibility 2]
-
-**Usage**: [Brief usage example]
-
-See [specs/agent-name/spec.md](specs/) for details.
-
----
-
-## Adding New Agents
-
-To add a new custom agent:
-
-1. Follow guidelines in [specs/AGENTS.md](specs/AGENTS.md) to create specifications
-2. Create directory: `specs/[agent-name]/`
-3. Create spec file: `specs/[agent-name]/spec.md`
-4. Add summary to "Agent List" section in this file
-5. Update README.md if needed
-
-## Notes
-
-- Refer to [specs/AGENTS.md](specs/AGENTS.md) for specification writing guidelines
-- Place detailed specifications in `specs/[capability]/spec.md` format
-- Maintain change history appropriately
+<!-- SPEC:END -->
