@@ -1,116 +1,116 @@
-# Claude AI プロンプト設定
+# Claude AI Prompt Configuration
 
-このファイルは、Claude AI を使用する際のプロンプト設定やガイドラインを定義します。
+This file defines prompt settings and guidelines for using Claude AI.
 
-## 仕様の更新について
+## Updating Specifications
 
-プロンプト仕様を更新する際は、必ず **[specs/AGENTS.md](specs/AGENTS.md)** を確認してください。
-そこに、仕様書の書き方や詳細仕様の記述方法が記載されています。
-
----
-
-## 基本設定
-
-### トーン・スタイル
-- [プロジェクトに適したトーンやスタイルを記述]
-- 例: 丁寧で専門的な口調、技術的正確性を重視
-
-### コンテキスト
-- [プロジェクトの背景や目的]
-- [使用する技術スタック]
-- [重要な制約事項]
+When updating prompt specifications, always check **[specs/AGENTS.md](specs/AGENTS.md)**.
+It contains guidelines on how to write specifications and detailed documentation.
 
 ---
 
-## タスク別プロンプト
+## Basic Settings
 
-### コードレビュー
+### Tone & Style
+- [Describe appropriate tone and style for the project]
+- Example: Professional and technical, prioritizing accuracy
 
-```
-[コードレビュー時に使用するプロンプトテンプレート]
+### Context
+- [Project background and purpose]
+- [Technology stack in use]
+- [Important constraints]
 
-例:
-以下のコードをレビューしてください：
-- セキュリティの問題
-- パフォーマンスの改善点
-- コードの可読性
-```
+---
 
-### コード生成
+## Task-Specific Prompts
 
-```
-[コード生成時に使用するプロンプトテンプレート]
-
-例:
-以下の要件に基づいてコードを生成してください：
-- 要件1
-- 要件2
-```
-
-### ドキュメント作成
+### Code Review
 
 ```
-[ドキュメント作成時に使用するプロンプトテンプレート]
+[Code review prompt template]
 
-例:
-以下の内容についてドキュメントを作成してください：
-- 目的
-- 使用方法
-- 注意事項
+Example:
+Review the following code for:
+- Security issues
+- Performance improvements
+- Code readability
+```
+
+### Code Generation
+
+```
+[Code generation prompt template]
+
+Example:
+Generate code based on these requirements:
+- Requirement 1
+- Requirement 2
+```
+
+### Documentation
+
+```
+[Documentation prompt template]
+
+Example:
+Create documentation covering:
+- Purpose
+- Usage
+- Considerations
 ```
 
 ---
 
-## プロンプトエンジニアリングのガイドライン
+## Prompt Engineering Guidelines
 
-1. **具体性**: 曖昧な指示を避け、具体的な要件を提示
-2. **コンテキスト**: 必要な背景情報を提供
-3. **制約**: 明確な制約事項を指定
-4. **例示**: 期待される出力例を示す
-5. **段階的**: 複雑なタスクは段階的に分割
+1. **Specificity**: Avoid ambiguity, provide concrete requirements
+2. **Context**: Provide necessary background information
+3. **Constraints**: Specify clear limitations
+4. **Examples**: Show expected output examples
+5. **Incremental**: Break complex tasks into steps
 
-## 品質基準
+## Quality Standards
 
-生成されたコンテンツの品質基準：
+Quality criteria for generated content:
 
-- **正確性**: 技術的に正確であること
-- **完全性**: 必要な情報がすべて含まれていること
-- **一貫性**: プロジェクトの規約に準拠していること
-- **可読性**: 理解しやすく構造化されていること
+- **Accuracy**: Technically correct
+- **Completeness**: Contains all necessary information
+- **Consistency**: Adheres to project conventions
+- **Readability**: Well-structured and understandable
 
-## ベストプラクティス
+## Best Practices
 
 ### Do's ✓
-- 明確で具体的な指示を与える
-- 必要なコンテキストを提供する
-- 期待される出力形式を指定する
-- 段階的なアプローチを取る
+- Give clear and specific instructions
+- Provide necessary context
+- Specify expected output format
+- Use incremental approach
 
 ### Don'ts ✗
-- 曖昧な指示を避ける
-- 過度に長いプロンプトを避ける
-- コンテキストなしに複雑なタスクを依頼しない
+- Avoid vague instructions
+- Avoid excessively long prompts
+- Don't request complex tasks without context
 
 ---
 
-## 詳細仕様の記述
+## Detailed Specifications
 
-詳細なプロンプト仕様を作成する場合：
+For detailed prompt specifications:
 
-1. [specs/AGENTS.md](specs/AGENTS.md) のガイドラインを参照
-2. specs/ ディレクトリに詳細仕様を作成
-3. このファイルから適切にリンク
+1. Refer to [specs/AGENTS.md](specs/AGENTS.md) guidelines
+2. Create detailed specs in specs/ directory
+3. Link appropriately from this file
 
-## 更新履歴
+## Change History
 
-| 日付 | 更新内容 | 更新者 |
+| Date | Changes | Author |
 |------|---------|--------|
-| YYYY-MM-DD | 初版作成 | [名前] |
+| YYYY-MM-DD | Initial version | [Name] |
 
 ---
 
-## 参考リンク
+## Reference Links
 
 - [Claude AI Documentation](https://docs.anthropic.com/claude/docs)
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
-- [プロジェクトの AGENTS.md](AGENTS.md)
+- [Project AGENTS.md](AGENTS.md)

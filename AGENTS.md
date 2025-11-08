@@ -1,41 +1,41 @@
-# カスタムエージェント仕様
+# Custom Agent Specifications
 
-このファイルは、プロジェクトで使用するカスタムエージェントの仕様を定義します。
+This file defines custom agent specifications for the project.
 
-## 仕様の更新について
+## Updating Specifications
 
-エージェント仕様を更新する際は、必ず **[specs/AGENTS.md](specs/AGENTS.md)** を確認してください。
-そこに、仕様書の書き方や詳細仕様の記述方法が記載されています。
-
----
-
-## エージェント一覧
-
-### [エージェント名を記入]
-
-**役割**: [エージェントの役割を簡潔に記述]
-
-**責任範囲**:
-- [責任1]
-- [責任2]
-
-**使用方法**: [簡単な使用例]
-
-詳細は [specs/エージェント名.md](specs/) を参照してください。
+When updating specifications, always check **[specs/AGENTS.md](specs/AGENTS.md)**.
+It contains guidelines on how to write specifications and detailed documentation.
 
 ---
 
-## 新しいエージェントの追加
+## Agent List
 
-新しいカスタムエージェントを追加する場合：
+### [Agent Name]
 
-1. [specs/AGENTS.md](specs/AGENTS.md) のガイドラインに従って仕様を作成
-2. specs/ ディレクトリに詳細仕様ファイルを作成
-3. このファイルの「エージェント一覧」セクションに概要を追加
-4. 必要に応じて README.md を更新
+**Role**: [Brief description of agent's role]
 
-## 注意事項
+**Scope**:
+- [Responsibility 1]
+- [Responsibility 2]
 
-- 仕様の記述方法については [specs/AGENTS.md](specs/AGENTS.md) を参照
-- 各エージェントの詳細仕様は specs/ ディレクトリに配置
-- 変更履歴を適切に管理すること
+**Usage**: [Brief usage example]
+
+See [specs/agent-name.md](specs/) for details.
+
+---
+
+## Adding New Agents
+
+To add a new custom agent:
+
+1. Follow guidelines in [specs/AGENTS.md](specs/AGENTS.md) to create specifications
+2. Create detailed spec file in specs/ directory
+3. Add summary to "Agent List" section in this file
+4. Update README.md if needed
+
+## Notes
+
+- Refer to [specs/AGENTS.md](specs/AGENTS.md) for specification writing guidelines
+- Place detailed specifications in specs/ directory
+- Maintain change history appropriately

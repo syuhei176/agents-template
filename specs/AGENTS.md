@@ -1,155 +1,159 @@
-# エージェント仕様書の書き方
+# How to Write Feature Specifications
 
-このドキュメントは、カスタムエージェントの仕様書を作成する際のガイドラインです。
+This document provides guidelines for creating feature specifications.
 
-## 仕様書の構成
+## Specification Structure
 
-エージェント仕様書は以下の構成で記述してください：
+Feature specifications should follow this structure:
 
-### 1. 概要セクション
+### 1. Overview
 
 ```markdown
-# エージェント名
+# Feature Name
 
-エージェントの目的と役割を簡潔に説明します。
+Brief description of the feature's purpose and goals.
 ```
 
-### 2. 責任範囲
+### 2. Scope
 
-エージェントが担当する具体的なタスクや責任範囲を明確に定義します。
+Define the specific scope and boundaries of the feature.
 
 ```markdown
-## 責任範囲
+## Scope
 
-- タスク1の説明
-- タスク2の説明
-- タスク3の説明
+- Functionality 1 description
+- Functionality 2 description
+- Functionality 3 description
 ```
 
-### 3. 入力と出力
+### 3. Requirements
 
-エージェントが受け取る入力と生成する出力の形式を定義します。
+Define functional and non-functional requirements.
 
 ```markdown
-## 入力
+## Functional Requirements
 
-- 入力パラメータ1: 説明
-- 入力パラメータ2: 説明
+- Requirement 1: description
+- Requirement 2: description
 
-## 出力
+## Non-Functional Requirements
 
-- 出力形式の説明
-- 期待される結果
+- Performance: description
+- Security: description
+- Usability: description
 ```
 
-### 4. 制約事項
+### 4. Constraints
 
-エージェントの動作における制約や注意事項を記載します。
+Document any constraints or limitations.
 
 ```markdown
-## 制約事項
+## Constraints
 
-- 制約1
-- 制約2
-- 制約3
+- Technical constraint 1
+- Business constraint 2
+- External dependency 3
 ```
 
-### 5. 実行例
+### 5. Examples
 
-具体的な使用例を示します。
+Provide concrete usage examples.
 
 ```markdown
-## 実行例
+## Examples
 
-### 例1: タスク名
+### Example 1: Use Case Name
 
-入力:
+Input:
 \```
-入力例
+Example input
 \```
 
-期待される出力:
+Expected Output:
 \```
-出力例
+Example output
 \```
 ```
 
-## 詳細仕様の書き方
+## Detailed Specifications
 
-詳細仕様は以下の観点で記述してください：
+Include these aspects in detailed specifications:
 
-### アルゴリズムとロジック
+### Implementation Details
 
-- エージェントの内部処理フロー
-- 判断基準とロジック
-- エラーハンドリング
+- Architecture design
+- Data models
+- API specifications
+- Error handling strategies
 
-### パフォーマンス要件
+### Performance Requirements
 
-- 実行時間の目標
-- リソース使用量の制限
+- Response time targets
+- Throughput expectations
+- Resource usage limits
 
-### 品質基準
+### Quality Standards
 
-- 成功の定義
-- テスト方法
-- 評価指標
+- Definition of done
+- Testing strategy
+- Acceptance criteria
 
-## ベストプラクティス
+## Best Practices
 
-1. **明確さ**: 曖昧な表現を避け、具体的に記述する
-2. **完全性**: 必要な情報をすべて含める
-3. **一貫性**: 用語や表記を統一する
-4. **更新性**: 変更履歴を記録する
-5. **テスト可能性**: 検証可能な基準を設定する
+1. **Clarity**: Use precise language, avoid ambiguity
+2. **Completeness**: Include all necessary information
+3. **Consistency**: Maintain uniform terminology
+4. **Traceability**: Document change history
+5. **Testability**: Define verifiable criteria
 
-## テンプレート
+## Template
 
-以下は基本的なテンプレートです：
+Basic template:
 
 ```markdown
-# [エージェント名]
+# [Feature Name]
 
-## 概要
-[エージェントの目的と役割]
+## Overview
+[Feature purpose and goals]
 
-## 責任範囲
-- [責任1]
-- [責任2]
+## Scope
+- [Scope item 1]
+- [Scope item 2]
 
-## 入力
-- [パラメータ1]: [説明]
+## Requirements
+### Functional
+- [Requirement 1]: [description]
 
-## 出力
-- [出力形式]
+### Non-Functional
+- [Performance]: [criteria]
 
-## 制約事項
-- [制約1]
+## Constraints
+- [Constraint 1]
 
-## 実行例
-### 例1
-入力: [入力例]
-出力: [出力例]
+## Examples
+### Example 1
+Input: [example input]
+Output: [example output]
 
-## 詳細仕様
-### 処理フロー
-1. [ステップ1]
-2. [ステップ2]
+## Implementation
+### Architecture
+1. [Component 1]
+2. [Component 2]
 
-### エラーハンドリング
-- [エラーケース1]: [対応方法]
+### Error Handling
+- [Error case 1]: [handling approach]
 ```
 
-## 更新手順
+## Update Process
 
-仕様を更新する際は：
+When updating specifications:
 
-1. このドキュメント（specs/AGENTS.md）を参照
-2. 上記のガイドラインに従って仕様を記述
-3. 変更内容を記録
-4. レビューを受ける
+1. Reference this document (specs/AGENTS.md)
+2. Follow the guidelines above
+3. Document changes
+4. Request review
 
-## 参考リンク
+## Reference Links
 
-- プロジェクトの README.md
-- 既存のエージェント仕様例
+- Project README.md
+- Existing specification examples
