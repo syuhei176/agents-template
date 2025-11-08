@@ -21,7 +21,7 @@ It contains guidelines on how to write specifications and detailed documentation
 
 **Usage**: [Brief usage example]
 
-See [specs/agent-name.md](specs/) for details.
+See [specs/agent-name/spec.md](specs/) for details.
 
 ---
 
@@ -30,12 +30,13 @@ See [specs/agent-name.md](specs/) for details.
 To add a new custom agent:
 
 1. Follow guidelines in [specs/AGENTS.md](specs/AGENTS.md) to create specifications
-2. Create detailed spec file in specs/ directory
-3. Add summary to "Agent List" section in this file
-4. Update README.md if needed
+2. Create directory: `specs/[agent-name]/`
+3. Create spec file: `specs/[agent-name]/spec.md`
+4. Add summary to "Agent List" section in this file
+5. Update README.md if needed
 
 ## Notes
 
 - Refer to [specs/AGENTS.md](specs/AGENTS.md) for specification writing guidelines
-- Place detailed specifications in specs/ directory
+- Place detailed specifications in `specs/[capability]/spec.md` format
 - Maintain change history appropriately
