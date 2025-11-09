@@ -7,7 +7,11 @@ This document defines the strict format and structure for writing feature specif
 Specifications MUST be organized as follows:
 
 ```
-specs/[capability]/spec.md
+specs/
+├── project.md          # Project conventions
+│── [capability]/       # Single focused capability
+│    ├── spec.md        # Requirements and scenarios
+│    └── design.md      # Technical patterns
 ```
 
 Where `[capability]` is a descriptive name for the feature or capability being specified.
@@ -78,7 +82,7 @@ All `spec.md` files MUST strictly follow this format:
 # admin-daily-reports Specification
 
 ## Purpose
-TBD - created by archiving change add-admin-daily-reports. Update Purpose after archive.
+Aggregate business metrics into a daily report.
 
 ## Requirements
 ### Requirement: Daily Report Data Aggregation
@@ -88,16 +92,7 @@ The system SHALL aggregate business metrics from multiple data sources into a un
 - **WHEN** generating daily report for date range
 - **THEN** system queries subscription_plan_with_stats view
 - **AND** counts new subscriptions created in period
-- **AND** counts active subscriptions as of end of period
-- **AND** counts cancelled subscriptions in period
-- **AND** calculates total revenue from subscriptions
 - **AND** groups revenue by plan (top 5 plans by revenue)
-
-#### Scenario: Handle missing data gracefully
-- **WHEN** data source is unavailable
-- **THEN** system logs error with data source details
-- **AND** continues processing other available data sources
-- **AND** marks report as partial in output
 
 ### Requirement: Report Generation
 The system SHALL generate reports in multiple formats.
@@ -125,3 +120,40 @@ The system SHALL generate reports in multiple formats.
 4. Start with "TBD" in Purpose if needed
 5. Define all requirements with scenarios
 6. Ensure scenarios are complete and testable
+
+## Create design.md when needed
+
+Create design.md if any of the following apply; otherwise omit it:
+- Cross-cutting change (multiple services/modules) or a new architectural pattern
+- New external dependency or significant data model changes
+- Security, performance, or migration complexity
+- Ambiguity that benefits from technical decisions before coding
+
+Minimal design.md skeleton:
+```
+## Context
+[Background, constraints, stakeholders]
+
+## Goals / Non-Goals
+- Goals: [...]
+- Non-Goals: [...]
+
+## Decisions
+- Decision: [What and why]
+- Alternatives considered: [Options + rationale]
+
+## Risks / Trade-offs
+- [Risk] → Mitigation
+
+## Migration Plan
+[Steps, rollback]
+
+## Open Questions
+- [...]
+```
+
+## Error Handling
+
+### Missing Context
+- Read project.md first
+- Check related specs
